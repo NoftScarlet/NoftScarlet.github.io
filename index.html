@@ -47,7 +47,7 @@
 				<div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
 					<ul class="navbar-nav">
 						<li><a class="active" href="index.html">Home</a></li>
-						<li><a href="about.html">Who would you like to help?</a></li>
+						<li><a href="#who-would-you">Who would you like to help?</a></li>
 						<!--================
 						<li class="dropdown">
 							<a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -98,22 +98,25 @@
 				<div class="banner-content col-lg-6">
 					<h1>
 						Your help will<br>
-						add <span style="color:#0ba935">colors</span> to their life.
+						add <span style="color:#0ba935">colours</span> to their life.
 					</h1>
 
-					<h3>Help brain injury survivors in Covid-19 times.</h3>
-					<a href="#" class="primary-btn" onmouseover="mouseEnter()" onmouseleave="mouseLeave()">
-						Help Them
-						<i class="ti-angle-right ml-1"></i>
-					</a>
+					<h3>Help brain injury survivors in COVID-19 times.</h3>
+						<button type="button" class=" primary-btn" data-toggle="modal" data-target="#exampleModalLong"  onmouseover="mouseEnter()" onmouseleave="mouseLeave()">
+							Help Them
+						</button>
+
 					" "
-					<a href="#" class="secondary-btn">
+					<a href="#who-would-you" class="secondary-btn">
 						Read More
 						<i class="ti-angle-right ml-1"></i>
 					</a>
+
 				</div>
+
 			</div>
 		</div>
+		<span id="who-would-you">.</span>
 	</section>
 
 
@@ -136,10 +139,29 @@
 							The Vancouver Brain Injury Association relies on generous donations from people like you to continue offering support, advocacy, and recovery help to brain injury survivors.
 							You can help some of the most vulnerable people with the click of a button.
 						</p>
-						<a href="#" class="primary-btn mt-5">
+
+						<button type="button" class="btn primary-btn mt-5" data-toggle="modal" data-target="#exampleModalLong">
 							Donate
-							<i class="ti-angle-right ml-1"></i>
-						</a>
+						</button>
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLongTitle">Thank you for your help</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<iframe src="https://www.canadahelps.org/en/dne/m/45889" style="width: 440px; height: 638px; border: 0px; overflow: hidden;"></iframe>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
 
 						<div class="active-brand-carusel">
 							<div class="single-brand">
@@ -164,68 +186,190 @@
 				<section class="popular-cause-area section-gap-top">
 					<div class="container">
 
-
 						<div class="row">
-							<div class="col-sm-6 featured-story">
+							<div class="col-sm-6 featured-story btn" data-toggle="modal" data-target="#stroke" type="button">
 								<div class="card">
 									<div class="image">
-										<img src="./img/stroke.JPG" />
+										<img src="./img/stroke.JPG"/>
 									</div>
 									<div class="card-inner">
 										<div class="header">
-											<h3>Sub-Head</h3>
+											<h3>Grant</h3>
 										</div>
 										<div class="content">
-											<p>Content area</p>
+											<p>Stroke Survivor</p>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-6 featured-story">
+							<!-- Modal -->
+							<div class="modal fade" id="stroke" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h3 class="modal-title" id="exampleModalLongTitle">Grant: Stroke Survivor</h3>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="mphotos-1 mphotos"></div>
+
+										<div class="modal-body modal-text">
+
+											Grant had been hosting backyard barbecues every summer and if you lived any where close to him you would definitely receive an invitation.
+											After a traumatic brain injury earlier that year you can imagine how excited he was to see his friends again. He now had impaired hand eye coordination but Grant was still set on flipping his neighbourhood famous burgers.
+											You can imagine the horror on the neighbours faces when Grant suddenly dropped his spatula, clutched his arm, and fell violently to the floor.
+											It was later discovered at the hospital that Grant had suffered from a stroke as a consequence of his earlier brain injury.
+											If it wasn’t for people like you, Grant would not have discovered the courage within himself to push through and stay positive.
+											You know that every person is worth saving.
+											Grant found people like you at the Vancouver Brain Injury Association.
+											Through support groups, rehab programs, and compassionate volunteers, Grant was able to return to his normal life.
+											Grant appreciates you for the strength you see within people, even when they can’t see it in themselves.
+
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- **************************************************** -->
+							<div class="col-sm-6 featured-story btn" data-toggle="modal" data-target="#progressive" type="button">
 								<div class="card">
 									<div class="image">
 										<img src="./img/progressive.JPG" />
 									</div>
 									<div class="card-inner">
 										<div class="header">
-											<h3>Sub-Head</h3>
+											<h3>Emilia</h3>
 										</div>
 										<div class="content">
-											<p>Content area</p>
+											<p>Progressive Brain Disease</p>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-6 featured-story">
+							<!-- Modal -->
+							<div class="modal fade" id="progressive" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+								<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h3 class="modal-title" id="exampleModalLongTitle">Emilia: Progressive Brain Disease</h3>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="mphotos-2 mphotos"></div>
+
+										<div class="modal-body modal-text">
+											Emilia is someone who would give you a warm hug and a bright smile every time she saw you.
+											Her 5th grade students knew her as Mrs. Robertson, and experiencing her warmth in the classroom is something you never forget.
+											You would not have noticed that anything was wrong with Emilia, she seemed to be just fine. She would say “one day I woke up feeling strange”, but quickly would brush it off and ask you about your day.
+											Imagine Emilia’s concern when she started forgetting students names, daily tasks, her route to school.
+											Day to day living became frustrating and stressful.  You could see the light in Emilia’s eyes begin to dim.
+											Then her doctor discovered Emilia was living with a progressive brain disease.  The doctor referred Emily to the Vancouver Brain Injury Association brain injury recovery program.
+											You know, Emilia soon responded to the friendship, therapies, and neurological exercise activities at Brain Gain Fridays.  Symptoms decreased and the progress of Emilia’s brain disease slowed.
+											Because of people like you, Emilia got help, care, and a supportive community.
+											People who care gave so Emilia could get her life back.
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- **************************************************** -->
+							<div class="col-sm-6 featured-story btn" data-toggle="modal" data-target="#athlete" type="button">
 								<div class="card">
 									<div class="image">
 										<img src="./img/athlete.JPG" />
 									</div>
 									<div class="card-inner">
 										<div class="header">
-											<h3>Sub-Head</h3>
+											<h3>Theresa</h3>
 										</div>
 										<div class="content">
-											<p>Content area</p>
+											<p>Brain-Injured Athlete</p>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-6 featured-story">
+							<!-- Modal -->
+							<div class="modal fade" id="athlete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+								<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h3 class="modal-title" id="exampleModalLongTitle">Grant: Stroke Survivor</h3>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="mphotos-3 mphotos"></div>
+
+										<div class="modal-body modal-text">
+											You have probably met people who’s lives revolve around the sport they play.
+											Theresa was exactly that type of person. She would tell you with a winning smile that she “lived, breathed, and cried on the tennis court”., She wouldn’t have it any other way.
+											You know university tuition is expensive  nowadays. Theresa was counting on securing a tennis scholarship. Her sport wasn’t just a hobby, it was a career.
+											Imagine the pressure, the high stakes of every single tennis match, the commitment  to give 110%. You feel your heart pumping, the sweat dripping down your face, the sun as it is beating down your back. Suddenly, you feel nothing.
+											Theresa woke up in the hospital to find out she had hit her head. She had a traumatic brain injury.
+											Having your entire identity stolen from you in the blink of an eye makes recovery very traumatic.
+											Theresa sunk into despair. If it wasn’t for people like you, Theresa might not have recovered.
+											You support, you are compassionate, you reach out a hand and help those who have fallen down. You value community and coming together to make people strong.
+											Theresa found people like you at the Vancouver Brain Injury Association.
+											Through support groups, rehab programs, and new found friendships, she began to get back on her feet.
+											Theresa thanks people like you for giving her the chance to become herself again, one serve at a time.
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- **************************************************** -->
+							<div class="col-sm-6 featured-story btn" data-toggle="modal" data-target="#concussion" type="button">
 								<div class="card">
 									<div class="image">
 										<img src="./img/concussion.jpeg" />
 									</div>
 									<div class="card-inner">
 										<div class="header">
-											<h3>Sub-Head</h3>
+											<h3>Max Kawasaki</h3>
 										</div>
 										<div class="content">
-											<p>Content area</p>
+											<p>Concussion Survivor</p>
 										</div>
 									</div>
 								</div>
 							</div>
+							<!-- Modal -->
+							<div class="modal fade" id="concussion" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+								<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h3 class="modal-title" id="exampleModalLongTitle">Grant: Stroke Survivor</h3>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="mphotos-4 mphotos"></div>
+
+										<div class="modal-body modal-text">
+											Do you know what it’s like to feel the weight of the world on your shoulders? Max does.
+											Max was just a high school student when he was attacked by an assailant and knocked to the ground. His head hit the ground hard, and while he did not know it yet, he had suffered a major concussion.
+											You can imagine the fear that Max felt when he could not tell the hospital where he lived.
+											Doctors told Max he would recover soon. Then they said in a few months he would feel better. Then one doctor told Max not to expect to recover; Max might have to live with a brain injury forever.
+											You know that’s not true – people can recover from brain injury. Fortunately, Max found the Vancouver Brain Injury Association.
+											You know in this world, some things are just worth fighting for.
+											People you might know, and other people like you, provided support groups and therapy sessions for people like Max. You will be glad to know Max reclaimed his life. Today, Max helps brain injury survivors across Metro Vancouver.
+											Thanks to people like you, Max is no longer alone.
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- **************************************************** -->
 						</div>
 
 						<div class="row">

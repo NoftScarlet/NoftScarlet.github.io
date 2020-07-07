@@ -714,7 +714,7 @@ th {
     }
 }
 .default-header .navbar {
-    padding: 22px 16px;
+    padding: 1px 1px;
 }
 .default-header .navbar .navbar-toggler {
     border: 1px solid #fff;
@@ -1161,7 +1161,7 @@ th {
     color: #ff573d;
 }
 .popular-cause-area {
-    max-height: 765px;
+    max-height: 800px;
     background: #ececec;
     padding-bottom: 10px;
 }
@@ -3726,8 +3726,47 @@ h3 {
     background-color: #f7f7f7;
 }
 
-
-
 #home2 {
     height:900px;
+}
+
+.modal-backdrop {
+    z-index: unset !important;
+}
+
+.modal-dialog {
+    top:60px
+}
+
+.col-sm-6.featured-story.btn {
+    text-align: left;
+    color: gray;
+}
+
+.mphotos {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.mphotos-1 {
+    background-image: url("../img/stroke.JPG");
+}
+
+.mphotos-2 {
+    background-image: url("../img/progressive.JPG");
+}
+
+.mphotos-3 {
+    background-image: url("../img/athlete.JPG");
+}
+
+.mphotos-4 {
+    background-image: url("../img/concussion.jpeg");
+}
+
+.modal-text {
+    font-size: 13pt;
 }
