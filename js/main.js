@@ -1,11 +1,27 @@
 $(document).ready(function () {
   "use strict";
+  let mElement = document.getElementById("popular-cause-area").cloneNode(true)
 
   var window_width = $(window).width(),
     window_height = window.innerHeight,
     header_height = $(".default-header").height(),
     header_height_static = $(".site-header.static").outerHeight(),
     fitscreen = window_height - header_height;
+
+
+  function resizer () {
+    if (window.innerWidth < 991) {
+      document.getElementById("popular-cause-wrapper-mobile").appendChild(mElement)
+      document.getElementById("popular-cause-wrapper-desktop").childNodes.forEach(elem=>{elem.remove()})
+
+    }
+    else if (window.innerWidth > 991 && !document.getElementById("popular-cause-wrapper-desktop").hasChildNodes()) {
+      document.getElementById("popular-cause-wrapper-desktop").appendChild(mElement)
+      document.getElementById("popular-cause-wrapper-mobile").childNodes.forEach(elem=>{elem.remove()})
+    }
+  }
+
+  window.addEventListener("resize", resizer);
 
 
   // $(".fullscreen").css("height", window_height)
@@ -39,28 +55,6 @@ $(document).ready(function () {
     }
   });
 
-  $('.active-brand-carusel').owlCarousel({
-    items: 3,
-    loop: true,
-    margin: 50,
-    autoplayHoverPause: true,
-    smartSpeed: 650,
-    autoplay: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      480: {
-        items: 2,
-      },
-      768: {
-        items: 4,
-      },
-      768: {
-        items: 3,
-      }
-    }
-  });
 
   /*----------------------------------------------------*/
 	/*  Testimonials Slider
@@ -198,6 +192,10 @@ $(document).ready(function () {
   });
 
   document.body.querySelector("img[src='img/header-color.jpg']").parentElement.style.opacity ='0'
+  if (window.innerWidth < 991) {
+    document.getElementById("popular-cause-area").remove()
+    document.getElementById("popular-cause-wrapper-mobile").appendChild(mElement)
+  }
 
 
 });

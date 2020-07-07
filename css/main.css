@@ -1161,7 +1161,7 @@ th {
     color: #ff573d;
 }
 .popular-cause-area {
-    max-height: 800px;
+    max-height: 730px;
     background: #ececec;
     padding-bottom: 10px;
 }
@@ -3712,10 +3712,19 @@ h3 {
     .top-container-wide {
         max-width: 1650px !important;
     }
+    #home2 {
+        height:925px;
+    }
+}
+@media (max-width: 1119.9px) {
+
+    #home2 {
+        height:725px;
+    }
 }
 
 .featured-story {
-    max-width: 405px !important;
+    max-width: 370px !important;
 }
 
 .plyr--video .plyr__controls {
@@ -3726,9 +3735,7 @@ h3 {
     background-color: #f7f7f7;
 }
 
-#home2 {
-    height:900px;
-}
+
 
 .modal-backdrop {
     z-index: unset !important;
@@ -3769,4 +3776,8 @@ h3 {
 
 .modal-text {
     font-size: 13pt;
+}
+
+html {
+    scroll-behavior: smooth;
 }
