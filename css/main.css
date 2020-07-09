@@ -1161,7 +1161,7 @@ th {
     color: #ff573d;
 }
 .popular-cause-area {
-    max-height: 730px;
+    max-height: 100%;
     background: #ececec;
     padding-bottom: 10px;
 }
